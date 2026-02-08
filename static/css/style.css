@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
+.contact-input {
+    margin-left: 135px; border: 2px solid #681515; border-radius: 20px; background: transparent; padding: 8px 185px;
+}
+
 html, body {
   font-family: "Jersey 15", sans-serif !important;
   font-weight: 400;
