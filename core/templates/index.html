@@ -210,6 +210,7 @@
 </div>
 
 <form action="" method="POST">
+    {% csrf_token %}
     <div style="background: rgb(237, 237, 237);">
         <h1 style="color: #681515; padding-top: 100px; font-size: 50px; font-weight: 700; margin-left: 135px;">Baslamaga hazirsan? <br> <span style="color: white; -webkit-text-stroke-width: 0.9px; -webkit-text-stroke-color: #681515;">Bizimle eleqe saxla</span></h1>
         <br>
@@ -217,14 +218,14 @@
             <div style="display: flex; gap: 65px;">
                 <div>
                     <p style="color: #681515; margin-left: 135px;">Ad<span style="color: red;">*</span></p>
-                    <input class="contact-input" type="text">
+                   
                     {{form.first_name}}
                     {{form.first_name.errors}}
                     <p style="font-size: 15px; margin-left: 135px;">adinizi butov daxil edin</p>
                 </div>
                 <div>
                     <p style="color: #681515; margin-left: 0;">Soyad<span style="color: red;">*</span></p>
-                    <input style="border: 2px solid #681515; border-radius: 20px; background: transparent; padding: 8px 235px;" type="text">
+                    
                     {{form.last_name}}
                     {{form.last_name.errors}}
                     <p style="font-size: 15px; margin-left: 0;">soyadinizi butov daxil edin</p>
@@ -232,25 +233,25 @@
             </div>
             <div style="margin-top: 10px;">
                 <p style="color: #681515; margin-left: 135px;">Email<span style="color: red;">*</span></p>
-                <input style="margin-left: 135px; border: 2px solid #681515; border-radius: 20px; background: transparent; padding: 8px 545px;" type="email">
+                
                 {{form.email}}
                 {{form.email.errors}}
             </div>
             <div style="margin-top: 10px;">
                 <p style="color: #681515; margin-left: 135px;">Vezife<span style="color: red;">*</span></p>
-                <input style="margin-left: 135px; border: 2px solid #681515; border-radius: 20px; background: transparent; padding: 8px 545px;" type="email">
+                
                {{form.position}}
                 {{form.position.errors}}
             </div>
             <div style="margin-top: 10px;">
                 <p style="color: #681515; margin-left: 135px;">Sirketin adi<span style="color: red;">*</span></p>
-                <input style="margin-left: 135px; border: 2px solid #681515; border-radius: 20px; background: transparent; padding: 8px 545px;" type="email">
+                
                {{form.company}}
                 {{form.company.errors}}
             </div>
             <div style="margin-top: 10px;">
                 <p style="color: #681515; margin-left: 135px;">Olke<span style="color: red;">*</span></p>
-                <input style="margin-left: 135px; border: 2px solid #681515; border-radius: 20px; background: transparent; padding: 8px 545px;" type="email">
+                
                {{form.country}}
                 {{form.country.errors}}
             </div>
@@ -258,7 +259,7 @@
     
             <div style="margin-top: 10px;">
                 <p style="color: #681515; margin-left: 135px;">Mesaj<span style="color: red;">*</span></p>
-                <input style="margin-left: 135px; border: 2px solid #681515; border-radius: 25px; background: transparent; padding: 15px 545px;" type="email">
+                
                 {{form.message}}
                 {{form.message.errors}}
                 <p style="font-size: 15px; margin-left: 135px; transform: skew(-15deg);">Ilk addimi sen at - davamini biz getirek</p>
